@@ -33,7 +33,9 @@ class MainActivity : AppCompatActivity() {
         //lista.remove("Java") remove primeira ocorrência ou     lista.removeAt(0) pra remover na posição
 
         // Crie um adapter e vincule-o ao ListView
+        // para alterar imagens dos itens, necessário adapter customizado... todo
         adapter = ArrayAdapter(this, R.layout.item_lista, R.id.textViewLista, itemList)
+
         listView.adapter = adapter
 
 
